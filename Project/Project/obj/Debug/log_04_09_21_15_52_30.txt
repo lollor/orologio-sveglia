@@ -1,0 +1,6 @@
+(04/09/2021 15:52:30:065) Programma aperto.
+(04/09/2021 15:52:33:826) Sto aggiungendo città.
+(04/09/2021 15:52:33:828) Inizio a creare grid.
+(04/09/2021 15:52:33:841) Costruttore Meteo richiamato della citta Milan.
+(04/09/2021 15:52:33:841) Chiamo la funzione DoRequest().
+(04/09/2021 15:52:33:843) Eccezione generata: Non è stato possibile caricare il file o l'assembly 'Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' o una delle relative dipendenze. Impossibile trovare il file specificato..
