@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.IO.Ports;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace Project
 {
@@ -40,8 +41,15 @@ namespace Project
             SelezionaSerial selezionaSerial = new SelezionaSerial(this);
             selezionaSerial.ShowDialog();
             Serial = new SerialPort(PortaCOM);
+            
             //Meteo meteo = new Meteo("Trezzano Rosa");
         }
+
+        private void Serial_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            Console.WriteLine($"E' arrivato questo: {Serial.ReadLine()}");
+        }
+
         Grid GetDefaultCittaGrid(Citta citta)
         {
             LogPersonalizzato.Log("Inizio a creare grid.");
@@ -147,34 +155,45 @@ namespace Project
             File.WriteAllText(PATH_SALVATAGGIO_DATI_CITTA, listaCitta.ReceiveStringToSaveData());
             File.WriteAllText(PATH_SALVATAGGIO_DATI_SVEGLIE, listaSveglie.ReceiveStringToSaveData());
             LogPersonalizzato.Log("Programma chiuso.");
+            if (sender != null)
+                Environment.Exit(0);
+            Serial.Close();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            controllarePortaCOM();
+            
             LogPersonalizzato.Log("Caricamento dati città.");
-            if (!listaCitta.LoadCitiesData(PATH_SALVATAGGIO_DATI_CITTA)) return;
-            List<Citta> lista = listaCitta.GetList();
-            for (int i = 0; i < lista.Count; i++)
+            if (listaCitta.LoadCitiesData(PATH_SALVATAGGIO_DATI_CITTA))
             {
-                Grid grid = GetDefaultCittaGrid(lista.ElementAt(i));
-                listaGridCitta.Add(grid);
-                gridd.Children.Add(grid);
-                LogPersonalizzato.Log($"{(((i + 1) / (double)lista.Count) * 100).ToString("F1")}%");
+                List<Citta> lista = listaCitta.GetList();
+                for (int i = 0; i < lista.Count; i++)
+                {
+                    Grid grid = GetDefaultCittaGrid(lista.ElementAt(i));
+                    listaGridCitta.Add(grid);
+                    gridd.Children.Add(grid);
+                    LogPersonalizzato.Log($"{(((i + 1) / (double)lista.Count) * 100).ToString("F1")}%");
+                }
             }
             //LogPersonalizzato.Log("Caricamento: 100%.");
             LogPersonalizzato.Log("Caricamento dati sveglie.");
-            if (!listaSveglie.LoadSveglieDati(PATH_SALVATAGGIO_DATI_SVEGLIE)) return;
-            List<Sveglia> sveglias = listaSveglie.GetList();
-            for (int i = 0; i < sveglias.Count; i++)
+            if (listaSveglie.LoadSveglieDati(PATH_SALVATAGGIO_DATI_SVEGLIE))
             {
-                Grid grid = GetDefaultSvegliaGrid(sveglias.ElementAt(i));
-                listaGridSveglie.Add(grid);
-                grid_sveglia.Children.Add(grid);
-                LogPersonalizzato.Log($"{(((i + 1) / (double)lista.Count) * 100).ToString("F1")}%");
+                List<Sveglia> sveglias = listaSveglie.GetList();
+                for (int i = 0; i < sveglias.Count; i++)
+                {
+                    CheckBox checkBox;
+                    Grid grid = GetDefaultSvegliaGrid(sveglias.ElementAt(i), out checkBox);
+                    sveglias.ElementAt(i).AggiungiCheckBox(checkBox);
+                    listaGridSveglie.Add(grid);
+                    grid_sveglia.Children.Add(grid);
+                    LogPersonalizzato.Log($"{(((i + 1) / (double)sveglias.Count) * 100).ToString("F1")}%");
+                }
             }
-
-            controllarePortaCOM();
-
+            Thread thread = new Thread(new ThreadStart(ControllaSveglie));
+            thread.Start();
+            Serial.DataReceived += Serial_DataReceived;
         }
         private void controllarePortaCOM()
         {
@@ -193,7 +212,7 @@ namespace Project
             LogPersonalizzato.Log("Porta aperta correttamente.");
         }
 
-        Grid GetDefaultSvegliaGrid(Sveglia sveglia)
+        Grid GetDefaultSvegliaGrid(Sveglia sveglia, out CheckBox cbox)
         {
             LogPersonalizzato.Log("Inizio a creare grid sveglia.");
             Grid grid = new Grid();
@@ -217,7 +236,7 @@ namespace Project
 
 
             //create checkbox
-            CheckBox cbox = new CheckBox();
+            cbox = new CheckBox();
             cbox.HorizontalAlignment = HorizontalAlignment.Left;
             cbox.Height = 20;
             cbox.Margin = new Thickness(189, 27, 0, 0);
@@ -279,7 +298,9 @@ namespace Project
             DateTime data = (DateTime)finestraSveglia.calendario.SelectedDate;
             data = new DateTime(data.Year, data.Month, data.Day, ora, minuto, 0);
             Sveglia sveglia = new Sveglia(nome, data);
-            Grid nuovagrid = GetDefaultSvegliaGrid(sveglia)/*.Result*/;
+            CheckBox checkBoxDellaSveglia;
+            Grid nuovagrid = GetDefaultSvegliaGrid(sveglia, out checkBoxDellaSveglia)/*.Result*/;
+            sveglia.AggiungiCheckBox(checkBoxDellaSveglia);
             if (nuovagrid == null) { return; }
             listaSveglie.AddSveglia(sveglia);
             listaGridSveglie.Add(nuovagrid);
@@ -300,7 +321,51 @@ namespace Project
         }
         private void ControllaSveglie()
         {
-
+            while (true)
+            {
+                //Console.WriteLine(listaSveglie.IsEmpty());
+                List<Sveglia> lista = listaSveglie.GetList();
+                foreach (Sveglia item in lista)
+                {
+                    //Console.WriteLine(item.Orario.ToString("HH:mm"));
+                    if (item.Orario.Date == DateTime.Now.Date && DateTime.Now.Hour == item.Orario.Hour && DateTime.Now.Minute == item.Orario.Minute)
+                    {
+                        CheckBoxInvoke(item, false);
+                        if (valori[0] && valori[1])
+                        {
+                            Serial.Write("Suona;");
+                            CheckBoxInvoke(item, true);
+                            LogPersonalizzato.Log($"Sveglia {item.Nome} sta suonando.");
+                            MessageBox.Show($"Sveglia {item.Nome} sta suonando!", "Sveglia", MessageBoxButton.OK, MessageBoxImage.Information);
+                        }
+                    }
+                }
+                Thread.Sleep(1000);
+            }
+        }
+        //gia controllato, valore vero
+        bool[] valori= { false, false};
+        private void CheckBoxInvoke(Sveglia item, bool bisognaModificare)
+        {
+            if (!bisognaModificare)
+                if (!CheckAccess())
+                {
+                    Dispatcher.Invoke(() => { CheckBoxInvoke(item, false); });
+                }
+                else
+                {
+                    valori[0] = true;
+                    valori[1] = (bool)item.checkBox.IsChecked;
+                }
+            else
+                if (!CheckAccess())
+                {
+                    Dispatcher.Invoke(() => { CheckBoxInvoke(item, true); });
+                }
+                else
+                {
+                item.ModificaValoreCheckBox(false);
+                }
         }
     }
 }

@@ -11,6 +11,10 @@ namespace Project
     {
         private List<Sveglia> sveglias;
         public ListaSveglie() { sveglias = new List<Sveglia>(); }
+        public bool IsEmpty()
+        {
+            return sveglias.Count <= 0;
+        }
         public Sveglia GetSveglia(int index) { return sveglias.ElementAt(index); }
         public void AddSveglia(Sveglia citta) { sveglias.Add(citta); }
         public string ReceiveStringToSaveData()

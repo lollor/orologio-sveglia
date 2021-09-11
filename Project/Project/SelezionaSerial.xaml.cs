@@ -65,20 +65,28 @@ namespace Project
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             string pr = (string)(cbPortaCOM.SelectedItem);
+            MessageBoxResult result;
             if (pr == "" || pr == null)
             {
-                MessageBox.Show("Non puoi chiudere la finestra senza aver configurato la porta.", "Errore", MessageBoxButton.OK, MessageBoxImage.Hand);
-                e.Cancel = true;
-                return;
+                result = MessageBox.Show("Non puoi chiudere la finestra senza aver configurato la porta. Chiudere l'applicazione?", "Errore", MessageBoxButton.YesNo, MessageBoxImage.Hand);
+                if (result == MessageBoxResult.No)
+                {
+                    e.Cancel = true;
+                    return;
+                }
+                Environment.Exit(0);
             }
-            MessageBoxResult result = MessageBox.Show("Vuoi confermare questa porta?", "Informazione", MessageBoxButton.YesNo, MessageBoxImage.Information);
+            result = MessageBox.Show("Vuoi confermare questa porta?", "Informazione", MessageBoxButton.YesNoCancel, MessageBoxImage.Information);
             if (result == MessageBoxResult.Yes)
             {
                 main.PortaCOM = (string)(cbPortaCOM.SelectedItem);
                 return;
-            } else
+            } else if (result == MessageBoxResult.Cancel)
             {
                 e.Cancel = true;
+            } else
+            {
+                Environment.Exit(0);
             }
         }
     }
