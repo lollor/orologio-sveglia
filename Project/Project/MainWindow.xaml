@@ -11,7 +11,8 @@
             <TabItem Header="Fusi orari" Margin="-2,-2,-74,0" FontSize="16">
                 <ScrollViewer>
                     <Grid x:Name="gridd" Background="#FFE5E5E5" ScrollViewer.HorizontalScrollBarVisibility="Visible">
-                        <Button Content="Aggiungi città" HorizontalAlignment="Left" Height="26" Margin="10,6,0,0" VerticalAlignment="Top" Width="267" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_Click"/>
+                        <Button Content="Aggiungi città" HorizontalAlignment="Left" Height="26" Margin="10,6,0,0" VerticalAlignment="Top" Width="132" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonAggiungiCitta_Click"/>
+                        <Button Content="Elimina città" HorizontalAlignment="Left" Height="26" Margin="147,6,0,0" VerticalAlignment="Top" Width="132" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonEliminaCitta_Click"/>
                         <!--<Grid HorizontalAlignment="Left" Height="73" Margin="10,38,0,0" VerticalAlignment="Top" Width="267" Background="LightGray">
                             <Label Content="Citta" HorizontalAlignment="Left" Height="31" Margin="3,5,0,0" VerticalAlignment="Top" Width="153" VerticalContentAlignment="Center" FontWeight="Bold"/>
                             <Image HorizontalAlignment="Left" Height="31" Margin="167,21,0,0" VerticalAlignment="Top" Width="31"/>
@@ -23,7 +24,17 @@
                 </ScrollViewer>
             </TabItem>
             <TabItem Header="Sveglia" Margin="70,-2,-151,0" FontSize="16">
-                <Grid Background="#FFE5E5E5"/>
+                <ScrollViewer>
+                    <Grid x:Name="grid_sveglia" Background="#FFE5E5E5">
+                        <Button Content="Aggiungi sveglia" HorizontalAlignment="Left" Height="26" Margin="10,6,0,0" VerticalAlignment="Top" Width="132" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonAggiungiSveglia_Click"/>
+                        <Button Content="Elimina sveglia" HorizontalAlignment="Left" Height="26" Margin="147,6,0,0" VerticalAlignment="Top" Width="132" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ButtonEliminaSveglia_Click"/>
+                        <!--<Grid HorizontalAlignment="Left" Height="73" Margin="10,38,0,0" VerticalAlignment="Top" Width="267" Background="LightGray">
+                            <Label Content="Nome" HorizontalAlignment="Left" Height="31" Margin="3,5,0,0" VerticalAlignment="Top" Width="183" VerticalContentAlignment="Center" FontWeight="Bold"/>
+                            <Label Content="Orario" HorizontalAlignment="Left" Height="31" Margin="3,38,0,0" VerticalAlignment="Top" Width="183" VerticalContentAlignment="Center"/>
+                            <CheckBox Content="Attiva" HorizontalAlignment="Left" Margin="189,27,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+                        </Grid>-->
+                    </Grid>
+                </ScrollViewer>
             </TabItem>
         </TabControl>
     </Grid>

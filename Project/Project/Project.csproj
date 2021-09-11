@@ -61,7 +61,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AggiungereSveglia.xaml.cs">
+      <DependentUpon>AggiungereSveglia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EliminaSveglia.xaml.cs">
+      <DependentUpon>EliminaSveglia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSveglie.cs" />
+    <Compile Include="SelezionaSerial.xaml.cs">
+      <DependentUpon>SelezionaSerial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sveglia.cs" />
     <Page Include="AggiungereFusoOrario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AggiungereSveglia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EliminaCitta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EliminaSveglia.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -77,12 +100,19 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Citta.cs" />
+    <Compile Include="EliminaCitta.xaml.cs">
+      <DependentUpon>EliminaCitta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListaCitta.cs" />
     <Compile Include="LogPersonalizzato.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SelezionaSerial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Meteo.cs" />

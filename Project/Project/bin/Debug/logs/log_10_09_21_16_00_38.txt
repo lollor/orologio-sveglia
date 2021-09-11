@@ -1,0 +1,20 @@
+(10/09/2021 16:00:38:522) Programma aperto.
+(10/09/2021 16:00:38:693) Caricamento dati.
+(10/09/2021 16:00:38:709) Costruttore Meteo richiamato della citta Houston.
+(10/09/2021 16:00:38:710) Chiamo la funzione DoRequest().
+(10/09/2021 16:00:38:714) Inizio la richiesta.
+(10/09/2021 16:00:38:837) Risposta arrivata!
+(10/09/2021 16:00:38:838) Converto i dati da JSON alla var Informazioni.
+(10/09/2021 16:00:38:963) Dati convertiti.
+(10/09/2021 16:00:38:964) Costruttore Meteo richiamato della citta Milan.
+(10/09/2021 16:00:38:964) Chiamo la funzione DoRequest().
+(10/09/2021 16:00:38:964) Inizio la richiesta.
+(10/09/2021 16:00:39:012) Risposta arrivata!
+(10/09/2021 16:00:39:013) Converto i dati da JSON alla var Informazioni.
+(10/09/2021 16:00:39:013) Dati convertiti.
+(10/09/2021 16:00:39:014) Inizio a creare grid.
+(10/09/2021 16:00:39:051) 50,0%
+(10/09/2021 16:00:39:051) Inizio a creare grid.
+(10/09/2021 16:00:39:053) 100,0%
+(10/09/2021 16:00:59:138) Salvataggio dati.
+(10/09/2021 16:00:59:139) Programma chiuso.

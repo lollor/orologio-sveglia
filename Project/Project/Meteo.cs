@@ -11,7 +11,7 @@ using System.Windows.Controls;
 
 namespace Project
 {
-    class Meteo
+    public class Meteo
     {
         private const string KEY = "19cc6dfbdb74405c87c173313210209";
         private static HttpClient client = new HttpClient();

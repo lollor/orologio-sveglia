@@ -1,0 +1,90 @@
+(06/09/2021 16:23:37:175) Programma aperto.
+(06/09/2021 16:23:37:455) Caricamento dati.
+(06/09/2021 16:23:37:473) Costruttore Meteo richiamato della citta Milan.
+(06/09/2021 16:23:37:474) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:37:481) Inizio la richiesta.
+(06/09/2021 16:23:37:651) Risposta arrivata!
+(06/09/2021 16:23:37:652) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:37:800) Dati convertiti.
+(06/09/2021 16:23:37:801) Costruttore Meteo richiamato della citta San Francisco.
+(06/09/2021 16:23:37:801) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:37:801) Inizio la richiesta.
+(06/09/2021 16:23:37:897) Risposta arrivata!
+(06/09/2021 16:23:37:898) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:37:898) Dati convertiti.
+(06/09/2021 16:23:37:898) Costruttore Meteo richiamato della citta Shanghai.
+(06/09/2021 16:23:37:899) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:37:899) Inizio la richiesta.
+(06/09/2021 16:23:37:989) Risposta arrivata!
+(06/09/2021 16:23:37:990) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:37:990) Dati convertiti.
+(06/09/2021 16:23:37:990) Costruttore Meteo richiamato della citta Rome.
+(06/09/2021 16:23:37:991) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:37:991) Inizio la richiesta.
+(06/09/2021 16:23:38:072) Risposta arrivata!
+(06/09/2021 16:23:38:072) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:38:072) Dati convertiti.
+(06/09/2021 16:23:38:073) Costruttore Meteo richiamato della citta Varedo.
+(06/09/2021 16:23:38:073) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:38:074) Inizio la richiesta.
+(06/09/2021 16:23:38:149) Risposta arrivata!
+(06/09/2021 16:23:38:150) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:38:150) Dati convertiti.
+(06/09/2021 16:23:38:150) Costruttore Meteo richiamato della citta Tokyo.
+(06/09/2021 16:23:38:151) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:38:151) Inizio la richiesta.
+(06/09/2021 16:23:38:262) Risposta arrivata!
+(06/09/2021 16:23:38:262) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:38:263) Dati convertiti.
+(06/09/2021 16:23:38:263) Costruttore Meteo richiamato della citta Kabul.
+(06/09/2021 16:23:38:264) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:38:264) Inizio la richiesta.
+(06/09/2021 16:23:38:373) Risposta arrivata!
+(06/09/2021 16:23:38:373) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:38:373) Dati convertiti.
+(06/09/2021 16:23:38:374) Costruttore Meteo richiamato della citta Paris.
+(06/09/2021 16:23:38:374) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:38:374) Inizio la richiesta.
+(06/09/2021 16:23:38:464) Risposta arrivata!
+(06/09/2021 16:23:38:465) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:38:465) Dati convertiti.
+(06/09/2021 16:23:38:465) Costruttore Meteo richiamato della citta Berlin.
+(06/09/2021 16:23:38:466) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:38:466) Inizio la richiesta.
+(06/09/2021 16:23:38:571) Risposta arrivata!
+(06/09/2021 16:23:38:572) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:38:572) Dati convertiti.
+(06/09/2021 16:23:38:573) Costruttore Meteo richiamato della citta Madrid.
+(06/09/2021 16:23:38:573) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:38:573) Inizio la richiesta.
+(06/09/2021 16:23:38:667) Risposta arrivata!
+(06/09/2021 16:23:38:667) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:38:668) Dati convertiti.
+(06/09/2021 16:23:38:668) Costruttore Meteo richiamato della citta Houston.
+(06/09/2021 16:23:38:668) Chiamo la funzione DoRequest().
+(06/09/2021 16:23:38:668) Inizio la richiesta.
+(06/09/2021 16:23:38:746) Risposta arrivata!
+(06/09/2021 16:23:38:746) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 16:23:38:746) Dati convertiti.
+(06/09/2021 16:23:38:748) Inizio a creare grid.
+(06/09/2021 16:23:38:891) 9,1%
+(06/09/2021 16:23:38:892) Inizio a creare grid.
+(06/09/2021 16:23:38:893) 18,2%
+(06/09/2021 16:23:38:894) Inizio a creare grid.
+(06/09/2021 16:23:38:895) 27,3%
+(06/09/2021 16:23:38:895) Inizio a creare grid.
+(06/09/2021 16:23:38:896) 36,4%
+(06/09/2021 16:23:38:896) Inizio a creare grid.
+(06/09/2021 16:23:38:896) 45,5%
+(06/09/2021 16:23:38:897) Inizio a creare grid.
+(06/09/2021 16:23:38:898) 54,5%
+(06/09/2021 16:23:38:898) Inizio a creare grid.
+(06/09/2021 16:23:38:899) 63,6%
+(06/09/2021 16:23:38:900) Inizio a creare grid.
+(06/09/2021 16:23:38:900) 72,7%
+(06/09/2021 16:23:38:900) Inizio a creare grid.
+(06/09/2021 16:23:38:901) 81,8%
+(06/09/2021 16:23:38:901) Inizio a creare grid.
+(06/09/2021 16:23:38:902) 90,9%
+(06/09/2021 16:23:38:902) Inizio a creare grid.
+(06/09/2021 16:23:38:903) 100,0%

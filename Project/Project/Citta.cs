@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    class Citta
+    public class Citta
     {
         public string Nome { get; set; }
         public Meteo Meteo { get; private set; }

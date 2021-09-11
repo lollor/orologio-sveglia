@@ -1,0 +1,27 @@
+(11/09/2021 12:24:18:956) Programma aperto.
+(11/09/2021 12:24:23:145) Caricamento dati città.
+(11/09/2021 12:24:23:166) Costruttore Meteo richiamato della citta Houston.
+(11/09/2021 12:24:23:167) Chiamo la funzione DoRequest().
+(11/09/2021 12:24:23:174) Inizio la richiesta.
+(11/09/2021 12:24:23:415) Risposta arrivata!
+(11/09/2021 12:24:23:415) Converto i dati da JSON alla var Informazioni.
+(11/09/2021 12:24:23:544) Dati convertiti.
+(11/09/2021 12:24:23:545) Costruttore Meteo richiamato della citta Milan.
+(11/09/2021 12:24:23:545) Chiamo la funzione DoRequest().
+(11/09/2021 12:24:23:545) Inizio la richiesta.
+(11/09/2021 12:24:23:590) Risposta arrivata!
+(11/09/2021 12:24:23:591) Converto i dati da JSON alla var Informazioni.
+(11/09/2021 12:24:23:591) Dati convertiti.
+(11/09/2021 12:24:23:593) Inizio a creare grid.
+(11/09/2021 12:24:23:681) 50,0%
+(11/09/2021 12:24:23:681) Inizio a creare grid.
+(11/09/2021 12:24:23:683) 100,0%
+(11/09/2021 12:24:23:683) Caricamento dati sveglie.
+(11/09/2021 12:24:23:685) Inizio a creare grid sveglia.
+(11/09/2021 12:24:23:686) 50,0%
+(11/09/2021 12:24:23:687) Inizio a creare grid sveglia.
+(11/09/2021 12:24:23:687) 100,0%
+(11/09/2021 12:24:23:688) Provo ad aprire la porta in COM1.
+(11/09/2021 12:24:23:689) Porta aperta correttamente.
+(11/09/2021 12:24:26:629) Salvataggio dati.
+(11/09/2021 12:24:26:633) Programma chiuso.

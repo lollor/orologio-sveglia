@@ -20,3 +20,11 @@ C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\Aggiu
 C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\AggiungereFusoOrario.baml
 C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\EliminaCitta.g.cs
+C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\EliminaCitta.baml
+C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\SelezionaSerial.g.cs
+C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\SelezionaSerial.baml
+C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\AggiungereSveglia.g.cs
+C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\AggiungereSveglia.baml
+C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\EliminaSveglia.g.cs
+C:\Users\Lorenzo\Scuola\5\PROGETTO INIZIO SCUOLA\Project\Project\obj\Debug\EliminaSveglia.baml

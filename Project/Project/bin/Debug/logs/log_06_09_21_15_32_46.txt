@@ -1,0 +1,69 @@
+(06/09/2021 15:32:46:119) Programma aperto.
+(06/09/2021 15:32:46:281) Caricamento dati.
+(06/09/2021 15:32:46:295) Costruttore Meteo richiamato della citta Milan.
+(06/09/2021 15:32:46:296) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:46:300) Inizio la richiesta.
+(06/09/2021 15:32:47:436) Risposta arrivata!
+(06/09/2021 15:32:47:437) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:47:556) Dati convertiti.
+(06/09/2021 15:32:47:557) Costruttore Meteo richiamato della citta San Francisco.
+(06/09/2021 15:32:47:557) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:47:558) Inizio la richiesta.
+(06/09/2021 15:32:47:617) Risposta arrivata!
+(06/09/2021 15:32:47:617) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:47:618) Dati convertiti.
+(06/09/2021 15:32:47:618) Costruttore Meteo richiamato della citta Shanghai.
+(06/09/2021 15:32:47:618) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:47:618) Inizio la richiesta.
+(06/09/2021 15:32:47:678) Risposta arrivata!
+(06/09/2021 15:32:47:678) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:47:678) Dati convertiti.
+(06/09/2021 15:32:47:679) Costruttore Meteo richiamato della citta Rome.
+(06/09/2021 15:32:47:679) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:47:679) Inizio la richiesta.
+(06/09/2021 15:32:47:730) Risposta arrivata!
+(06/09/2021 15:32:47:730) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:47:731) Dati convertiti.
+(06/09/2021 15:32:47:731) Costruttore Meteo richiamato della citta Varedo.
+(06/09/2021 15:32:47:731) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:47:731) Inizio la richiesta.
+(06/09/2021 15:32:47:774) Risposta arrivata!
+(06/09/2021 15:32:47:774) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:47:775) Dati convertiti.
+(06/09/2021 15:32:47:775) Costruttore Meteo richiamato della citta Tokyo.
+(06/09/2021 15:32:47:775) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:47:775) Inizio la richiesta.
+(06/09/2021 15:32:47:816) Risposta arrivata!
+(06/09/2021 15:32:47:816) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:47:816) Dati convertiti.
+(06/09/2021 15:32:47:817) Costruttore Meteo richiamato della citta Kabul.
+(06/09/2021 15:32:47:817) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:47:817) Inizio la richiesta.
+(06/09/2021 15:32:47:871) Risposta arrivata!
+(06/09/2021 15:32:47:871) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:47:872) Dati convertiti.
+(06/09/2021 15:32:47:872) Costruttore Meteo richiamato della citta Paris.
+(06/09/2021 15:32:47:872) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:47:872) Inizio la richiesta.
+(06/09/2021 15:32:47:953) Risposta arrivata!
+(06/09/2021 15:32:47:953) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:47:953) Dati convertiti.
+(06/09/2021 15:32:47:953) Costruttore Meteo richiamato della citta Berlin.
+(06/09/2021 15:32:47:953) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:47:954) Inizio la richiesta.
+(06/09/2021 15:32:48:006) Risposta arrivata!
+(06/09/2021 15:32:48:006) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:48:006) Dati convertiti.
+(06/09/2021 15:32:48:007) Costruttore Meteo richiamato della citta Madrid.
+(06/09/2021 15:32:48:007) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:48:007) Inizio la richiesta.
+(06/09/2021 15:32:48:062) Risposta arrivata!
+(06/09/2021 15:32:48:062) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:48:062) Dati convertiti.
+(06/09/2021 15:32:48:063) Costruttore Meteo richiamato della citta Houston.
+(06/09/2021 15:32:48:063) Chiamo la funzione DoRequest().
+(06/09/2021 15:32:48:063) Inizio la richiesta.
+(06/09/2021 15:32:48:113) Risposta arrivata!
+(06/09/2021 15:32:48:114) Converto i dati da JSON alla var Informazioni.
+(06/09/2021 15:32:48:114) Dati convertiti.
+(06/09/2021 15:32:48:115) Inizio a creare grid.

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    class ListaCitta
+    public class ListaCitta
     {
         private List<Citta> cittas;
         public ListaCitta() { cittas = new List<Citta>(); }
@@ -34,6 +34,22 @@ namespace Project
             }
             return true;
         }
+
+        public int GetCount() { return cittas.Count; }
+
+        public bool RemoveCity(string nome)
+        {
+            foreach (Citta item in cittas)
+            {
+                if (item.Nome == nome)
+                {
+                    cittas.Remove(item);
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public List<Citta> GetList() { return cittas; }
     }
 }
